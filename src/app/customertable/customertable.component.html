@@ -1,0 +1,26 @@
+<h1 style="font-weight: bold; text-align: center;background-color: rgb(193, 219, 219);"  > Customer Record</h1>
+
+<table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th scope="col">Company Name</th>
+      <th scope="col">Company Decription</th>
+      <th scope="col">Company Start Year</th>
+      <th scope="col">Detailes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr  *ngFor="let d of result">
+      <td>{{d.companyName}}</td>
+      <td>{{d.companydec}}</td>
+      <td>{{d.companystartYear}}</td>
+      <td>
+          <button type="button" class="btn btn-primary" (click)="submit(d)">View Detailes</button>
+          <!-- <button type="button" class="btn btn-primary">Primary</button> -->
+
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!-- <app-customer-detailes [value]="selectItem"></app-customer-detailes> -->
+<app-customerdetails [value]="selectItem"></app-customerdetails>

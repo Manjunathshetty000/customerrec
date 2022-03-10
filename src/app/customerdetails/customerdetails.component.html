@@ -1,0 +1,25 @@
+<h1 style="font-weight: bold; text-align: center; background-color:rgb(199, 195, 170);">Selected Customer</h1>
+<table class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">CompanyName</th>
+        <th scope="col">Company Description</th>
+        <th scope="col">Company start year</th>
+        <th scope="col">Company gst no</th>
+        <th scope="col">Branches</th>
+        <th scope="col">Technolgies</th>
+        <th scope="col">State</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{mergeData?.companyName}}</td>
+        <td>{{mergeData?.companydec}}</td>
+        <td>{{mergeData?.companystartYear}}</td>
+        <td>{{mergeData?.gst}}</td>
+        <td>{{mergeData?.Branches}}</td>
+        <td>{{mergeData?.Technologies}}</td>
+        <td>{{mergeData?.state}}</td>
+      </tr>
+    </tbody>
+  </table>
